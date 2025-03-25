@@ -1,0 +1,137 @@
+/* Styling untuk body agar lebih rapi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+    margin: 0;
+}
+
+/* Container untuk kalkulator */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling utama kalkulator */
+.calculator {
+    width: 350px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display input */
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Styling untuk tombol */
+.buttons {
+    display: grid;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.operations {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.functions {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.numbers {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Style dasar tombol */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Warna tombol */
+.num {
+    background-color: #444;
+    color: white;
+}
+
+.op {
+    background-color: #ff9500;
+    color: white;
+}
+
+.gray {
+    background-color: #666;
+    color: white;
+}
+
+.red {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.equal {
+    background-color: #0a84ff;
+    color: white;
+}
+
+/* Hover efek */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .calculator {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #display {
+        font-size: 1.8em;
+        height: 50px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
